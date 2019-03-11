@@ -10,7 +10,7 @@ body {
     "sidebar content";
 }
 
-.sidebar {
+.navbar {
   grid-area: sidebar;
   background-color: #404040;
 }
