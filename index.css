@@ -32,3 +32,10 @@ code {
   background-color: #eee;
   border-radius: 5px;
 }
+
+/* TODO add a button to show the menu */
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 0 auto;
+  }
+}
