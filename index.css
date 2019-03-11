@@ -18,3 +18,8 @@ body {
   grid-area: content;
   background-color: #fcfcfc;
 }
+code {
+  padding: 2px 5px;
+  background-color: #eee;
+  border-radius: 5px;
+}
