@@ -6,7 +6,8 @@ body {
   display: grid;
   height: 100vh;
   width: 100vw;
-  grid-template-columns: 300px auto;
+  --navbar-width: 300px;
+  grid-template-columns: var(--navbar-width) auto;
   grid-template-areas:
     "sidebar content";
 }
@@ -19,14 +20,22 @@ a:visited {
   color: #9b59b6;
 }
 
+.navbar-frame {
+  overflow-x: hidden; /* Hide the scrollbar */
+}
 .navbar {
+  width: calc(var(--navbar-width) + 20px); /* Hide the scrollbar */
+  height: 100%;
   grid-area: sidebar;
   background-color: #404040;
   color: #d9d9d9;
   overflow-y: scroll;
-  scrollbar-width: none; /* Firefox only (experimantal) */
   display: grid;
   grid-template-rows: min-content auto 50px;
+}
+.navbar > * {
+  box-sizing: border-box;
+  width: var(--navbar-width);
 }
 .navbar header {
   display: flex;
