@@ -13,7 +13,13 @@ body {
 .navbar {
   grid-area: sidebar;
   background-color: #404040;
+  color: #d9d9d9;
 }
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .content {
   grid-area: content;
   background-color: #fcfcfc;
