@@ -102,6 +102,10 @@ a:visited {
   padding: 20px;
   display: flex;
   justify-content: space-between;
+    /* It behaves like `fixed`, but this way we'll avoid adding top margin for the content
+  and other positional quirks. */
+  position: sticky;
+  top: 0;
 }
 .content > header #edit-on-github {
   display: flex;
